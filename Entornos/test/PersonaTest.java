@@ -1,8 +1,13 @@
 import org.junit.Test;
-Class PersonaTest;
-Persona alumno = new Persona("Noah",20,124463634);
-@Test
-public void getDNI(){
-    
-}
 
+import static org.junit.Assert.assertEquals;
+
+public class PersonaTest {
+    Persona alumno = new Persona("Noah", 24, 8);
+
+    @Test
+    public void testGetEdad(){
+        assertEquals(24, alumno.getEdad());
+
+    }
+}
